@@ -27,3 +27,8 @@ class CardFeatures(BaseModel):
 class FraudDetectionInferenceInput(BaseModel):
     transaction: Transaction
     card_features: CardFeatures
+
+
+class FraudDetectionInferenceOutput(BaseModel):
+    fraud_probability: float
+    fraud_prediction: bool
