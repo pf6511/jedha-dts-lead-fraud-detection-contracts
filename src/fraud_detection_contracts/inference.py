@@ -21,7 +21,7 @@ class CardFeatures(BaseModel):
     card_transaction_count: int
     card_fraud_count: int
     card_fraud_rate: float
-    card_avg_amount: float
+    card_avg_amount: float | None
 
 
 class FraudDetectionInferenceInput(BaseModel):
